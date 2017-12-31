@@ -22,6 +22,6 @@ public class Venue {
     private String streetAddress;
     private String city;
     private String additionalInfo;
-    @OneToMany(mappedBy = "event")
+    @OneToMany(mappedBy = "venue")
     private Set<Event> events;
 }

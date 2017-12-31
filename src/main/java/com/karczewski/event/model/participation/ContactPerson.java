@@ -17,7 +17,7 @@ public class ContactPerson {
     private String name;
     private String surname;
     private String position;
-    private String phoneNumber;
+    private String contactPhoneNumber;
     private String email;
     private String comments;
 
