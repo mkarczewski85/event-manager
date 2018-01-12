@@ -29,7 +29,8 @@ public class Invoice {
     private Trade trade;
     @Enumerated(EnumType.STRING)
     private EmployedStaff staff;
-    @Embedded
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "invoice")
+    @PrimaryKeyJoinColumn
     private ContactPerson contactPerson;
     @OneToMany(mappedBy = "invoice")
     private Set<Participant> participants;
